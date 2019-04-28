@@ -25,6 +25,7 @@ public class ExpanseBehaviour : MonoBehaviour {}
  
  ### Demo
  Import the following url into the expanse to test this asset bundle.
+ 
  https://rawcdn.githack.com/the-expanse/ExpanseAsset/34a047b75eb97ef7518c7b0dcf058717ff30a7e8/AssetBundles/expanseasset
 
 
