@@ -10,7 +10,7 @@ In the image below the `ExpanseAsset` Script will be added to the `AssetRoot` ga
 
 ![Exapnse Unity Hierarchy](https://i.imgur.com/IxErGkk.jpg)
 
-TL;DR 
+#### TL;DR 
   * Create a dummy class called `ExpanseBehaviour` with the following code inside; 
 ```
 using UnityEngine;
@@ -22,3 +22,10 @@ public class ExpanseBehaviour : MonoBehaviour {}
   * Create an android version with the same name plus `_android` i.e. `expanseasset` and `expanseasset_android`.
   * Upload your assets to a publically accessible location. 
   * Load the asset into the expanse scene editor using the main asset bundle url ( android is appended automatically ) ! 
+ 
+ ### Demo
+ Import the following url into the expanse to test this asset bundle.
+ https://rawcdn.githack.com/the-expanse/ExpanseAsset/34a047b75eb97ef7518c7b0dcf058717ff30a7e8/AssetBundles/expanseasset
+
+
+![Demo](https://raw.githubusercontent.com/the-expanse/ExpanseAsset/master/demo.gif)
