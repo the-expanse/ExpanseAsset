@@ -1,6 +1,9 @@
 # Expanse Asset Demo
 This repo has the most simple example of using scripts inside asset bundles within the Expanse. Soon we will release a Unity plugin designed to package up your asset scripts and prefab simplifying teh process of creating asset bundles compatible with The Expanse.
 
+### What Is This?
+This is an example asset for use with the social VR platform - The Expanse. The Expanse is a metaverse style VR game with integrated content creation tools and support for loading in 3d models and unity asset bundles.
+
 ### How To Use
 
 The included script files `ExpanseAsset.cs` and `Trigger.cs` are quite simple. The `Trigger` class is used to handle collider events and to change the color of the collider object depending on trigger enter or trigger exit ( in this case a Sphere inside the included prefab ). The `ExpanseAsset` class is used to initialise the `Trigger` class on the Sphere at runtime. This is needed as the refereneces on objects will be broken when the classes are compiled at runtime. This is because the created Components no longer have the same GUIDs as they did in the Unity Editor. We must re-add these Components at runtime using the `AddComponent` method. Then to kick things off our main class ( `ExpanseAsset` in this case ) must inherit from the class `ExpanseBehaviour` rather than `MonoBehaviour`. This means it will be automatically instantiated on the parent game object and can kick everything off. 
